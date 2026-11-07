@@ -2,14 +2,14 @@ import Flutter
 import UIKit
 import SquarePointOfSaleSDK
 
-public class SwiftSquarePosPlugin: NSObject, FlutterPlugin {
+public class SquarePosPlugin: NSObject, FlutterPlugin {
     private var operations: [String: SquarePosPluginResponseWrapper] = [:]
     private var currentOperation: SquarePosPluginResponseWrapper?
 
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "square_pos", binaryMessenger: registrar.messenger())
-    let instance = SwiftSquarePosPlugin()
+    let instance = SquarePosPlugin()
       registrar.addMethodCallDelegate(instance, channel: channel)
       registrar.addApplicationDelegate(instance)
   }

@@ -13,7 +13,7 @@ A new flutter plugin project.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Ovatu Pty Ltd' => 'hello@ovatu.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'square_pos/Sources/square_pos/**/*'
   s.dependency 'Flutter'
   s.dependency 'SquarePointOfSaleSDK', '3.5.2'
   s.platform = :ios, '12.0'
